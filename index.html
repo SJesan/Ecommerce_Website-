@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marooned Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="bg-black shadow-md sticky top-0 z-20 md:bg-white">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between md:flex-row flex-col">
+            <!-- Logo and Hamburger Icon -->
+            <div class="flex items-center  w-full md:w-auto">
+                <div class="md:hidden flex items-center">
+                    <button id="menu-toggle" class="focus:outline-none">
+                        <img class="w-6 h-6" src="sources/hamburger-icon.svg" alt="Menu">
+                    </button>
+                </div>
+                <div class="w-auto flex justify-center md:justify-start">
+                    <img class="w-32 ml-4 md:ml-10 hidden md:block" src="sources/logo.png" alt="Logo">
+                    <img class="w-32 ml-4 md:ml-10 md:hidden" src="sources/logo_2.webp  " alt="Logo">
+
+                </div>
+            </div>
+             <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-6 text-gray-600 font-medium mt-4 md:mt-0"> <a href="#"
+                    class="hover:text-blue-500">HOME</a>
+                <div class="relative group">
+                    <div class="flex h-5 hover:text-blue-500"> <a href="#">MEN'S</a>
+                        <img src="sources/down.svg" alt="">
+                    </div>
+                    <div class="absolute w-60 hidden group-hover:block bg-white shadow-lg mt-2 rounded top-3">
+                        <ul class="py-2">
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">SHIRT 2024</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">SHOES – 2024</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">T-SHIRT 2024</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">PUNJABI</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">TROUSER</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">SLIDES</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">SOCKS</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">SUNGLASS 2023</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">WINTER JACKET</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">SHOES – 2022</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">SHIRT – 2022</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div class="flex h-5 hover:text-blue-500"> <a href="#">BAG'S</a>
+                        <img src="sources/down.svg" alt="">
+                    </div>
+                    <div class="absolute w-60 hidden group-hover:block bg-white shadow-lg mt-2 rounded top-3">
+                        <ul class="py-2">
+                            <li><a href="#" class="block px-4 py-2 hover:text-blue-500">Bagpack</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:text-blue-500">Waist Bags</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:text-blue-500">Gym/Travel Bags</a></li>
+                        </ul>
+                    </div>
+                </div> <a href="#" class="hover:text-blue-500">PRE-ORDER</a> <a href="#"
+                    class="hover:text-blue-500">BEAUTY</a>
+            </nav>
+
+            <!-- Search Bar -->
+            <div class="flex items-center w-full md:w-auto mt-4 md:mt-0 border border-gray-300">
+
+                <input type="text" placeholder="Search for products"
+                    class="w-full px-3 py-2 focus:outline-none focus:ring focus:ring-gray-200">
+                <select class="px-2 py-2 hidden md:block">
+                    <option value="">All Categories</option>
+                    <option class="level-0" value="babies">Babies</option>
+                    <option class="level-0" value="babies-dress">Babies Dress</option>
+                    <option class="level-0" value="bag_bari">Bag Bari</option>
+                    <option class="level-0" value="classic-fit-panjabi">Classic Fit Panjabi</option>
+                    <option class="level-0" value="dress-2">Dress</option>
+                    <option class="level-0" value="dress">Dress</option>
+                    <option class="level-0" value="dresses">Dresses</option>
+                    <option class="level-0" value="drop-sholder-t-shirt">Drop Shoulder T-Shirt</option>
+                    <option class="level-0" value="full-sleeve">Full Sleeve</option>
+                    <option class="level-0" value="gym-bag-travel-bag">Gym Bag / Travel Bag</option>
+                    <option class="level-0" value="gym-travel-bags">Gym/Travel Bags</option>
+                    <option class="level-0" value="half-sleeve">Half Sleeve</option>
+                    <option class="level-0" value="jacket">Jacket</option>
+                    <option class="level-0" value="jackets">Jackets</option>
+                    <option class="level-0" value="mens">Men’s</option>
+                    <option class="level-0" value="mens-collection">Men’s Collection</option>
+                    <option class="level-0" value="mens_-eid_collections_22">Men’s Eid Collections 22</option>
+                    <option class="level-0" value="mens_shoes">Men’s Shoes</option>
+                    <option class="level-0" value="mens-shoes">Men’s shoes</option>
+                    <option class="level-0" value="mens-trouser">Men’s Trousers</option>
+                    <option class="level-0" value="mens-bag">Mens bag</option>
+                    <option class="level-0" value="panjabi">Panjabi</option>
+                    <option class="level-0" value="pre-shoes">Pre Men’s Shoes</option>
+                    <option class="level-0" value="pre-mens-jacket">Pre-Men’s Jacket</option>
+                    <option class="level-0" value="pre-order">Pre-Order</option>
+                    <option class="level-0" value="pre-trouser">PRE-TROUSER</option>
+                    <option class="level-0" value="sandals">Sandals</option>
+                    <option class="level-0" value="shirt">Shirt</option>
+                    <option class="level-0" value="shirt-2023">SHIRT 2024</option>
+                    <option class="level-0" value="shirt-50-discount">Shirt 50% Discount</option>
+                    <option class="level-0" value="shoes">Shoes</option>
+                    <option class="level-0" value="shoes-2023">SHOES 2024</option>
+                    <option class="level-0" value="slides">Slides</option>
+                    <option class="level-0" value="slides-eid-collection-23">Slides Eid Collection 23</option>
+                    <option class="level-0" value="socks">Socks</option>
+                    <option class="level-0" value="socks-2">Socks</option>
+                    <option class="level-0" value="sunglass-2023">SUNGLASS 2023</option>
+                    <option class="level-0" value="sunglasses">Sunglasses</option>
+                    <option class="level-0" value="poster-tag">T-Shirt</option>
+                    <option class="level-0" value="t-shirt">T-Shirt</option>
+                    <option class="level-0" value="trousers">Trousers</option>
+                    <option class="level-0" value="uncategorized">Uncategorized</option>
+                    <option class="level-0" value="waist_bag">Waist Bag</option>
+                    <option class="level-0" value="waist-bags">Waist Bags</option>
+                    <option class="level-0" value="winter-collection-2022">Winter Collection 2022</option>
+                    <option class="level-0" value="fashion">Women’s</option>
+                    <option class="level-0" value="womens-bag">Women’s bag</option>
+                    <option class="level-0" value="womens_eid_collections_22">Women’s Eid Collections 22</option>
+                    <option class="level-0" value="womens-shoes">Women’s shoes</option>
+                    <option class="level-0" value="womens_trousers">Women’s Trousers</option>
+                </select>
+                <button class="bg-blue-600 px-3 py-3 h-full ">
+                    <img class="" src="sources/search.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4">
+        <div>
+            <img src="sources/Home/1.jpg" alt="">
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+
+            <div><img src="sources/Home/7.jpg" alt=""></div>
+            <div><img src="sources/Home/8.jpg" alt=""></div>
+        </div>
+        <div class="grid gap-4 mt-4">
+            <img class="w-full" src="sources/Home/9.jpg" alt="">
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 mt-4">
+            <div class="md:col-span-8"><img class="w-full" src="sources/Home/10.jpg" alt=""></div>
+            <div class="md:col-span-4"><img class="w-full" src="sources/Home/11.jpg" alt=""></div>
+        </div>
+    </main>
+
+    <footer class="bg-[#172337] text-white font-Roboto py-10 mt-10">
+        <div class="flex flex-wrap justify-around container mx-auto px-4 font-roboto">
+
+            <!-- INFORMATION Section -->
+            <div class="w-full md:w-auto mb-4 md:mb-0">
+                <h2 class="text-lg font-bold">INFORMATION</h2>
+                <ul class="space-y-5  mt-3">
+                    <li><a href="men.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                    <li><a href="men.html" class="text-gray-400 hover:text-white">Store Location</a></li>
+                    <li><a href="men.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    <li><a href="men.html" class="text-gray-400 hover:text-white">Shipping & Delivery</a></li>
+                    <li><a href="men.html" class="text-gray-400 hover:text-white">Latest News</a></li>
+                    <li><a href="men.html" class="text-gray-400 hover:text-white">Our Sitemap</a></li>
+                </ul>
+            </div>
+
+            <!-- OUR SERVICE Section -->
+            <div class="w-full md:w-auto mb-4 md:mb-0">
+                <h2 class="text-lg font-bold">OUR SERVICE</h2>
+                <ul class="space-y-5  mt-3">
+                    <li><a href="men.html" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                    <li><a href="men.html" class="text-gray-400 hover:text-white">Terms of Sale</a></li>
+                    <li><a href="men.html" class="text-gray-400 hover:text-white">Customer Service</a></li>
+                    <li><a href="men.html" class="text-gray-400 hover:text-white">Delivery Information</a></li>
+                    <li><a href="men.html" class="text-gray-400 hover:text-white">Payments</a></li>
+                    <li><a href="men.html" class="text-gray-400 hover:text-white">Saved Cards</a></li>
+                </ul>
+            </div>
+
+            <!-- MY ACCOUNT Section -->
+            <div class="w-full md:w-auto mb-4 md:mb-0">
+                <h2 class="text-lg font-bold">MY ACCOUNT</h2>
+                <ul class="space-y-5  mt-3">
+                    <li><a href="men.html" class="text-gray-400 hover:text-white">My Account</a></li>
+                    <li><a href="men.html" class="text-gray-400 hover:text-white">My Shop</a></li>
+                    <li><a href="men.html" class="text-gray-400 hover:text-white">My Cart</a></li>
+                    <li><a href="men.html" class="text-gray-400 hover:text-white">Checkout</a></li>
+                    <li><a href="men.html" class="text-gray-400 hover:text-white">My Wishlist</a></li>
+                    <li><a href="men.html" class="text-gray-400 hover:text-white">Tracking Order</a></li>
+                </ul>
+            </div>
+
+            <!-- NEWSLETTER Section -->
+            <div class="w-full md:w-auto mb-4 md:mb-0">
+                <h2 class="text-lg font-bold">NEWSLETTER</h2>
+                <p class="text-gray-400">Subscribe to our mailing list for updates!</p>
+                <!-- Social Media Icons (Placeholder Links) -->
+                <div class="flex justify-around mt-6">
+                    <div>
+                        <img class="w-7 hover:w-8" src="sources/facebook.png" alt="Facebook">
+                    </div>
+                    <div>
+                        <img class="w-7 hover:w-8" src="sources/twitter.png" alt="Twitter">
+                    </div>
+                    <div>
+                        <img class="w-7 hover:w-8" src="sources/linkedin (3).png" alt="LinkedIn">
+                    </div>
+                    <div>
+                        <img class="w-7 hover:w-8" src="sources/instagram.png" alt="Instagram">
+                    </div>
+                    <div>
+                        <img class="w-7 hover:w-8" src="sources/message.png" alt="Message">
+                    </div>
+                    <div>
+                        <img class="w-7 hover:w-8" src="sources/rss.png" alt="RSS">
+                    </div>
+                    <div>
+                        <img class="w-7 hover:w-8" src="sources/youtube.png" alt="YouTube">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+        <div class="bg-[#1c2940] flex justify-between mt-16 h-20 items-center  ">
+            <div class="mx-5">
+                Maroonedbd © 2020 by PressLayouts All Rights Reserved.
+            </div>
+            <div class="mx-5">
+                <img src="sources/payment.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
