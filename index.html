@@ -35,24 +35,41 @@
                     </li>
                     <li class="flex justify-between items-center hover:text-blue-500">
                         <span>Home</span>
-                        <span>+</span>
                     </li>
-                    <li class="flex justify-between items-center hover:text-blue-500">
-                        <span>Men's</span>
-                        <span>+</span>
+                    <li class="flex flex-col justify-between items-start hover:text-blue-500">
+                        <div class="flex justify-between items-center w-full">
+                            <span>Men's</span>
+                            <button class="toggle-submenu focus:outline-none text-xl font-bold">+</button>
+                        </div>
+                        <!-- Hidden Submenu -->
+                        <ul class="submenu hidden py-2 pl-6 space-y-2">
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">SHIRT 2024</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">SHOES – 2024</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">T-SHIRT 2024</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">PUNJABI</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">TROUSER</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">SLIDES</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">SOCKS</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">SUNGLASS 2023</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">WINTER JACKET</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">SHOES – 2022</a></li>
+                            <li><a href="men.html" class="block px-4 py-2 hover:text-blue-500">SHIRT – 2022</a></li>
+                        </ul>
                     </li>
-                    <li class="flex justify-between items-center hover:text-blue-500">
-                        <span>Women's</span>
-                        <span>+</span>
+                    
+                    <li class="flex flex-col justify-between items-start hover:text-blue-500">
+                        <div class="flex justify-between items-center w-full">
+                            <span>Bag's</span>
+                            <button class="toggle-submenu focus:outline-none text-xl font-bold">+</button>
+                        </div>
+                        <!-- Hidden Submenu -->
+                        <ul class="submenu hidden py-2 pl-6 space-y-2">
+                            <li><a href="#" class="block px-4 py-2 hover:text-blue-500">Bagpack</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:text-blue-500">Waist Bags</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:text-blue-500">Gym/Travel Bags</a></li>
+                        </ul>
                     </li>
-                    <li class="flex justify-between items-center hover:text-blue-500">
-                        <span>Bags</span>
-                        <span>+</span>
-                    </li>
-                    <li class="flex justify-between items-center hover:text-blue-500">
-                        <span>Babies</span>
-                        <span>+</span>
-                    </li>
+                    
                     <li class="flex justify-between items-center hover:text-blue-500">
                         <span>Pre-Order</span>
                         <span>+</span>
@@ -290,6 +307,21 @@
             // Toggle the 'hidden' class
             mobileMenu.classList.toggle('hidden');
         });
+
+        // Get all buttons that toggle the submenu
+const toggleButtons = document.querySelectorAll('.toggle-submenu');
+
+toggleButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const submenu = button.parentElement.nextElementSibling;
+        // Toggle visibility
+        submenu.classList.toggle('hidden');
+        // Optionally, change the button text from '+' to '-'
+        button.textContent = submenu.classList.contains('hidden') ? '+' : '-';
+    });
+});
+
+
     </script>
 
 </body>
