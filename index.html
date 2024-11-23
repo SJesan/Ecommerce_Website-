@@ -26,7 +26,56 @@
 
                 </div>
             </div>
-             <!-- Navigation Links -->
+            <!-- mobile -->
+            <div id="mobile-menu" class="hidden bg-white fixed top-14 left-0 w-3/4 h-full shadow-lg p-6 z-50">
+                <ul class="space-y-6 text-black text-lg">
+                    <li class="flex justify-between items-center hover:text-blue-500">
+                        <h2 class="font-bold">MENU</h2>
+                        <h2 class="font-bold">CATEGORIES</h2>
+                    </li>
+                    <li class="flex justify-between items-center hover:text-blue-500">
+                        <span>Home</span>
+                        <span>+</span>
+                    </li>
+                    <li class="flex justify-between items-center hover:text-blue-500">
+                        <span>Men's</span>
+                        <span>+</span>
+                    </li>
+                    <li class="flex justify-between items-center hover:text-blue-500">
+                        <span>Women's</span>
+                        <span>+</span>
+                    </li>
+                    <li class="flex justify-between items-center hover:text-blue-500">
+                        <span>Bags</span>
+                        <span>+</span>
+                    </li>
+                    <li class="flex justify-between items-center hover:text-blue-500">
+                        <span>Babies</span>
+                        <span>+</span>
+                    </li>
+                    <li class="flex justify-between items-center hover:text-blue-500">
+                        <span>Pre-Order</span>
+                        <span>+</span>
+                    </li>
+                    <li class="flex justify-between items-center hover:text-blue-500">
+                        <span>Beauty</span>
+                        <span>+</span>
+                    </li>
+                </ul>
+                <!-- Social Media Icons -->
+                <div class="flex flex-wrap items-center gap-4 mt-6 text-gray-500">
+                    <img class="w-6 hover:opacity-75" src="sources/facebook.png" alt="Facebook">
+                    <img class="w-6 hover:opacity-75" src="sources/twitter.png" alt="Twitter">
+                    <img class="w-6 hover:opacity-75" src="sources/linkedin (3).png" alt="LinkedIn">
+                    <img class="w-6 hover:opacity-75" src="sources/instagram.png" alt="Instagram">
+                    <img class="w-6 hover:opacity-75" src="sources/message.png" alt="Message">
+                    <img class="w-6 hover:opacity-75" src="sources/rss.png" alt="RSS">
+                    <img class="w-6 hover:opacity-75" src="sources/youtube.png" alt="YouTube">
+                </div>
+            </div>
+        
+
+            <!-- Navigation Links -->
             <nav class="hidden md:flex space-x-6 text-gray-600 font-medium mt-4 md:mt-0"> <a href="#"
                     class="hover:text-blue-500">HOME</a>
                 <div class="relative group">
@@ -233,6 +282,15 @@
         </div>
     </footer>
 
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            // Toggle the 'hidden' class
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 
 </body>
 
